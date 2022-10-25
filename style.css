@@ -20,7 +20,7 @@ h2 {
 }
 
 .container {
-  width: 90%;
+  width: 1200px;
   margin: auto;
 }
 
@@ -29,7 +29,6 @@ header {
   width: 100%;
   position: fixed;
   background-color: rgba(115, 142, 165, 0.6);
-  padding: 15px 0;
   z-index: 9;
 }
 
@@ -39,11 +38,9 @@ header .container {
   align-items: center;
 }
 
-#logo-brand a {
-  color: #fff;
-  font-family: "Parisienne", cursive;
-  font-size: 2rem;
-  font-weight: 600;
+#logo-brand img {
+  width: 250px;
+  display: block;
 }
 
 .nav-button {
@@ -143,6 +140,8 @@ nav a:hover::after {
   display: block;
   width: 100%;
   height: 100vh;
+  object-fit: fill;
+  object-position: center;
 }
 
 /* Couple section */
@@ -243,7 +242,8 @@ nav a:hover::after {
 }
 
 .couple-middle-img img {
-  max-width: 80%;
+  width: 80%;
+  height: 83%;
   border-radius: 65%/50%;
   z-index: -1;
 }
@@ -333,6 +333,7 @@ nav a:hover::after {
 
 .sweet-story-item-img img {
   max-width: 95%;
+  height: 95%;
   border-radius: 50%;
 }
 
@@ -353,11 +354,18 @@ nav a:hover::after {
   font-weight: 600;
 }
 
+@media screen and (max-width: 1366px) {
+  .container {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /* Logo brand and navbar */
   .nav-button {
     display: block;
     cursor: pointer;
+    margin-right: 5%;
   }
 
   header .container {
@@ -376,7 +384,7 @@ nav a:hover::after {
   }
 
   .nav-toogle {
-    height: 230px;
+    height: 240px;
   }
 
   .line-break {
@@ -392,6 +400,14 @@ nav a:hover::after {
     width: 130px;
     height: 130px;
     margin-left: -10px;
+  }
+
+  .banner-content-head h1 {
+    font-size: 4rem;
+  }
+
+  .banner-content-head p {
+    font-size: 1.5rem;
   }
 
   .banner-content-coutdown div span:last-child {
@@ -430,5 +446,44 @@ nav a:hover::after {
     background-color: rgba(134, 160, 182, 0.05);
     padding: 30px 20px;
     text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+  }
+
+  .banner-content-head h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner-content-head p {
+    font-size: 1.1rem;
+  }
+
+  .banner-content-coutdown {
+    width: 100%;
+    display: grid;
+    grid: 1fr 1fr / 1fr 1fr 1fr;
+  }
+
+  .banner-content-coutdown div:nth-child(4),
+  .banner-content-coutdown div:last-child {
+    transform: translateX(50px);
+  }
+
+  #couple-section::before,
+  #couple-section::after {
+    width: 150px;
+  }
+
+  .couple-middle-img {
+    width: 310px;
+  }
+
+  .couple-middle-img img {
+    width: 76%;
+    height: 66%;
   }
 }
