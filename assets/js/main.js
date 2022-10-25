@@ -53,15 +53,15 @@ const countDown = (y, m, d) => {
   if (daysCount < 10) daysCount = "0" + daysCount;
 
   // Hours contdown
-  hoursCount = 24 - now.getHours() - 1;
+  hoursCount = 23 - now.getHours();
   if (hoursCount < 10) hoursCount = "0" + hoursCount;
 
   // Minutes Countdown
-  minutesCount = 60 - now.getMinutes() - 1;
+  minutesCount = 59 - now.getMinutes();
   if (minutesCount < 10) minutesCount = "0" + minutesCount;
 
   // Seconds minutes
-  secondsCount = 60 - now.getSeconds() - 1;
+  secondsCount = 59 - now.getSeconds();
   if (secondsCount < 10) secondsCount = "0" + secondsCount;
 
   $monthEle.innerHTML = monthCount;
