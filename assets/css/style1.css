@@ -120,7 +120,7 @@ nav a:hover::after {
 }
 
 .banner-content-coutdown div {
-  background: url(../images/countdown_bg.svg);
+  background: url(../../img/countdown_bg.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -145,12 +145,76 @@ nav a:hover::after {
   bottom: 28%;
 }
 
-.banner-carousel-img img {
-  display: block;
+.banner-carousel-img .banner-img {
+  display: none;
   width: 100%;
   height: 100vh;
   object-fit: fill;
   object-position: center;
+}
+
+.nextSlider,
+.preSlider {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(115, 142, 165, 0.6);
+  opacity: 0.6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.nextSlider {
+  right: 0;
+}
+.nextSlider:hover,
+.preSlider:hover {
+  transform: translateY(-50%) scale(1.2);
+}
+
+.nextSlider::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+}
+
+.preSlider::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(-45deg);
+}
+
+.banner-img.active {
+  display: block;
+  animation: fade;
+  animation-duration: 0.8s;
+}
+
+/* .banner-img.fade {
+} */
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* Couple section */
@@ -162,7 +226,7 @@ nav a:hover::after {
 
 #couple-section::before {
   content: "";
-  background: url(../images/bg_shape.png);
+  background: url(../../img/bg_shape.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 360px;
@@ -174,7 +238,7 @@ nav a:hover::after {
 
 #couple-section::after {
   content: "";
-  background: url(../images/bg_shape_2.png);
+  background: url(../../img/bg_shape_2.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
@@ -239,7 +303,7 @@ nav a:hover::after {
 }
 
 .couple-middle-img {
-  background-image: url(../images/shape-couple-pic.png);
+  background-image: url(../../img/shape-couple-pic.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -330,7 +394,7 @@ nav a:hover::after {
 
 .sweet-story-item-img::after {
   content: "";
-  background: url(../images/shape-sweet-story.png);
+  background: url(../../img/shape-sweet-story.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 180px;
@@ -478,6 +542,18 @@ nav a:hover::after {
     width: 100%;
     display: grid;
     grid: 1fr 1fr / 1fr 1fr 1fr;
+  }
+
+  .nextSlider,
+  .preSlider {
+    width: 40px;
+    height: 40px;
+  }
+
+  .nextSlider::after,
+  .preSlider::after {
+    width: 8px;
+    height: 8px;
   }
 
   .banner-content-coutdown div:nth-child(4),

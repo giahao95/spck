@@ -24,10 +24,10 @@
     />
 
     <!-- Animated css library  -->
-    <link rel="stylesheet" href="./css/animate.css".css">
+    <link rel="stylesheet" href="assets/css/animate.css".css">
 
     <!-- My css -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="assets/css/style1.css" />
   </head>
   <body>
     <div id="app">
@@ -36,7 +36,7 @@
         <div class="container">
           <div id="logo-brand">
             <a href="#">
-              <img src="./images/logo-removebg-preview.png" alt="logo brand" />
+              <img src="img/logo-removebg-preview.png" alt="logo brand" />
             </a>
           </div>
           <div class="nav-button">
@@ -86,7 +86,17 @@
         </div>
         <div class="banner-carousel">
           <div class="banner-carousel-img">
-            <img src="./images/8.jpeg" alt="banner image" />
+            <img
+              class="banner-img active"
+              src="img/8.jpeg"
+              alt="banner image"
+            />
+            <img class="banner-img" src="img/3.jpeg" alt="banner image" />
+            <img class="banner-img" src="img/1.jpeg" alt="banner image" />
+          </div>
+          <div class="control">
+            <div class="preSlider" onclick="preControl()"></div>
+            <div class="nextSlider" onclick="nextControl()"></div>
           </div>
         </div>
       </section>
@@ -95,7 +105,7 @@
       <section id="couple-section">
         <div class="container">
           <div class="couple-content-left wow slideInLeft">
-            <img src="./images/harry.webp" alt="couple image" />
+            <img src="img/harry.webp" alt="couple image" />
             <h3>Prince Harry</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
@@ -109,10 +119,10 @@
             </div>
           </div>
           <div class="couple-middle-img wow fadeInDown">
-            <img src="./images/6.jpeg" alt="couple image" />
+            <img src="img/6.jpeg" alt="couple image" />
           </div>
           <div class="couple-content-right wow slideInRight">
-            <img src="./images/meghan.jpeg" alt="couple image" />
+            <img src="img/meghan.jpeg" alt="couple image" />
             <h3>Meghan Markle</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam
@@ -132,7 +142,7 @@
       <section id="sweet-story-section">
         <div class="container">
           <div class="sweet-story-title">
-            <img src="./images/photo-buffe.png" alt="sweet story title image" />
+            <img src="img/photo-buffe.png" alt="sweet story title image" />
             <h2>Our Sweet Story</h2>
             <div class="round-ball"></div>
           </div>
@@ -141,7 +151,7 @@
               <div class="sweet-story-item-img">
                 <img
                   class="wow fadeInRightBig"
-                  src="./images/first-meet.jpeg"
+                  src="img/first-meet.jpeg"
                   alt="sweet story image"
                 />
               </div>
@@ -160,7 +170,7 @@
               <div class="sweet-story-item-img">
                 <img
                   class="wow fadeInLeftBig"
-                  src="./images/first-date.jpeg"
+                  src="img/first-date.jpeg"
                   alt="sweet story image"
                 />
               </div>
@@ -179,7 +189,7 @@
               <div class="sweet-story-item-img">
                 <img
                   class="wow fadeInRightBig"
-                  src="./images/2.2e43e12f.jpg"
+                  src="img/2.2e43e12f.jpg"
                   alt="sweet story image"
                 />
               </div>
@@ -198,7 +208,7 @@
               <div class="sweet-story-item-img">
                 <img
                   class="wow fadeInLeftBig"
-                  src="./images/2.2e43e12f.jpg"
+                  src="img/2.2e43e12f.jpg"
                   alt="sweet story image"
                 />
               </div>
@@ -218,10 +228,10 @@
       </section>
     </div>
 
-    <script src="./js/wow.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script>
       new WOW().init();
     </script>
-    <script src="./js/main.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

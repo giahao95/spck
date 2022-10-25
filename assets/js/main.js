@@ -72,3 +72,20 @@ const countDown = (y, m, d) => {
 };
 
 setInterval(() => countDown(2023, 1, 11), 1000);
+
+// Carousel
+const $bannerImg = document.querySelectorAll(".banner-img");
+console.log($bannerImg);
+let i = 0;
+
+const nextControl = () => {
+  $bannerImg[i].classList.remove("active");
+  i = (i + 1) % $bannerImg.length;
+  $bannerImg[i].classList.add("active");
+};
+
+const preControl = () => {
+  $bannerImg[i].classList.remove("active");
+  i = (i - 1 + $bannerImg.length) % $bannerImg.length;
+  $bannerImg[i].classList.add("active");
+};
