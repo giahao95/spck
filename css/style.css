@@ -120,7 +120,7 @@ nav a:hover::after {
 }
 
 .banner-content-coutdown div {
-  background: url(./images/countdown_bg.svg);
+  background: url(../images/countdown_bg.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -162,7 +162,7 @@ nav a:hover::after {
 
 #couple-section::before {
   content: "";
-  background: url(./images/bg_shape.png);
+  background: url(../images/bg_shape.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 360px;
@@ -174,7 +174,7 @@ nav a:hover::after {
 
 #couple-section::after {
   content: "";
-  background: url(./images/bg_shape_2.png);
+  background: url(../images/bg_shape_2.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top right;
@@ -239,7 +239,7 @@ nav a:hover::after {
 }
 
 .couple-middle-img {
-  background-image: url(./images/shape-couple-pic.png);
+  background-image: url(../images/shape-couple-pic.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -330,7 +330,7 @@ nav a:hover::after {
 
 .sweet-story-item-img::after {
   content: "";
-  background: url(./images/shape-sweet-story.png);
+  background: url(../images/shape-sweet-story.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 180px;

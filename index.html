@@ -23,8 +23,11 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- Animated css library  -->
+    <link rel="stylesheet" href="./css/animate.css".css">
+
     <!-- My css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div id="app">
@@ -91,7 +94,7 @@
       <!-- Couple section -->
       <section id="couple-section">
         <div class="container">
-          <div class="couple-content-left">
+          <div class="couple-content-left wow slideInLeft">
             <img src="./images/harry.webp" alt="couple image" />
             <h3>Prince Harry</h3>
             <p>
@@ -105,10 +108,10 @@
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
-          <div class="couple-middle-img">
+          <div class="couple-middle-img wow fadeInDown">
             <img src="./images/6.jpeg" alt="couple image" />
           </div>
-          <div class="couple-content-right">
+          <div class="couple-content-right wow slideInRight">
             <img src="./images/meghan.jpeg" alt="couple image" />
             <h3>Meghan Markle</h3>
             <p>
@@ -136,9 +139,13 @@
           <div class="sweet-story-list">
             <div class="sweet-story-item">
               <div class="sweet-story-item-img">
-                <img src="./images/first-meet.jpeg" alt="sweet story image" />
+                <img
+                  class="wow fadeInRightBig"
+                  src="./images/first-meet.jpeg"
+                  alt="sweet story image"
+                />
               </div>
-              <div class="sweet-story-item-content">
+              <div class="sweet-story-item-content wow bounceIn">
                 <h3>FIRST TIME WE MEET</h3>
                 <p>Feb 06, 2016</p>
                 <p>
@@ -151,9 +158,13 @@
             </div>
             <div class="sweet-story-item">
               <div class="sweet-story-item-img">
-                <img src="./images/first-date.jpeg" alt="sweet story image" />
+                <img
+                  class="wow fadeInLeftBig"
+                  src="./images/first-date.jpeg"
+                  alt="sweet story image"
+                />
               </div>
-              <div class="sweet-story-item-content">
+              <div class="sweet-story-item-content wow bounceIn">
                 <h3>FIRST DATE</h3>
                 <p>Feb 06, 2016</p>
                 <p>
@@ -166,9 +177,13 @@
             </div>
             <div class="sweet-story-item">
               <div class="sweet-story-item-img">
-                <img src="./images/2.2e43e12f.jpg" alt="sweet story image" />
+                <img
+                  class="wow fadeInRightBig"
+                  src="./images/2.2e43e12f.jpg"
+                  alt="sweet story image"
+                />
               </div>
-              <div class="sweet-story-item-content">
+              <div class="sweet-story-item-content wow bounceIn">
                 <h3>MARRIAGE PROPOSAL</h3>
                 <p>Feb 06, 2016</p>
                 <p>
@@ -181,9 +196,13 @@
             </div>
             <div class="sweet-story-item">
               <div class="sweet-story-item-img">
-                <img src="./images/2.2e43e12f.jpg" alt="sweet story image" />
+                <img
+                  class="wow fadeInLeftBig"
+                  src="./images/2.2e43e12f.jpg"
+                  alt="sweet story image"
+                />
               </div>
-              <div class="sweet-story-item-content">
+              <div class="sweet-story-item-content wow bounceIn">
                 <h3>OUR ENGAGEMENT</h3>
                 <p>Feb 06, 2016</p>
                 <p>
@@ -199,6 +218,10 @@
       </section>
     </div>
 
-    <script src="main.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
